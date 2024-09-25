@@ -7,9 +7,64 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     <script src="myscripts.js" type="text/babel"></script>
-    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    * {
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(to right, #00c9ff, #92fe9d);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+
+    .login-box {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+            font-weight: bold;
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to right, #00c9ff, #92fe9d);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        cursor: pointer;
+        border-radius: 10%;
+    }
+</style>
 <body>
-    <div class="login"></div>
+    <div id="login"></div>
 </body>
 </html>
